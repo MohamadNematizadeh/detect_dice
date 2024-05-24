@@ -6,8 +6,11 @@ def pre_install():
     #f = open("README.md" , "r")
     #text = f.read()
     this_directory = Path(__file__).parent
-    long_description = (this_directory / "README.md").read_text()   
+    long_description = (this_directory / "README.md").read_text()    
     return long_description
+
+with open('./requirements.txt') as f:
+    install_requires = f.read().splitlines()
 
 
 setup(name="detect_dice" ,
