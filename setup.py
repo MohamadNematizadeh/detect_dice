@@ -5,11 +5,9 @@ from pathlib import Path
 def pre_install():
     #f = open("README.md" , "r")
     #text = f.read()
-    # this_directory = Path(__file__).parent
-    # long_description = (this_directory / "README.md").read_text()   
-    text =  "# detect dice detect_dice is a simple and fast dice detection library made in Python based on cv2(opencv. This library allows you to perform dice detection operations on images for you"
-
-    return text
+    this_directory = Path(__file__).parent
+    long_description = (this_directory / "README.md").read_text()   
+    return long_description
 
 
 setup(name="detect_dice" ,
