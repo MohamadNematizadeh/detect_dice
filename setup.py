@@ -15,7 +15,7 @@ def pre_install():
     # this_directory = Path(__file__).parent
     # long_description = (this_directory / "README.md").read_text() 
     text = "#detect_dice is a simple and fast dice detection library made in Python based on cv2(opencv. This library allows you to perform dice detection operations on images for you"
-     return text
+    return text
 
 
 pre_install()
