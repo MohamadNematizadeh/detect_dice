@@ -22,6 +22,6 @@ python3 detector_dice.py --input dice.jpg --output output.jpg
 ### Python
 
 ```python
-import detector_dice
-detect_dice.detect_dice(image_path="۳.jpg",output_path="1.jpg")
+from detect_dice import detect_dice
+url = detect_dice.detect_dice(image_path="/content/۳.jpg",output_path="/content/1.jpg")
 ```
