@@ -1,31 +1,29 @@
-from pathlib import Path
 from setuptools import setup
-
-
-def post_install():
-    """ Implement post installation routine """
-    with open('./requirements.txt') as f:
-        install_requires = f.read().splitlines()
-
-    return install_requires
+from pathlib import Path
 
 
 def pre_install():
-    """ Implement pre installation routine """
-    global long_description
+    #f = open("README.md" , "r")
+    #text = f.read()
     this_directory = Path(__file__).parent
-    long_description = (this_directory / "README.md").read_text()
+    long_description = (this_directory / "README.md").read_text()    
+    return long_description
+
+with open('./requirements.txt') as f:
+    install_requires = f.read().splitlines()
 
 
-pre_install()
-
-setup(
-    name="detect_dice",
-    version="1.0.0",
-    author="MohamadNematizadeh",
+setup(name="detect_dice" ,
+    version="1.0.2", 
+    author="MohamadNematizadeh" , 
     description="This package is in the field of image processing and can perform dice detection for you",
-    long_description=pre_install(),
-    requires=[],
-    author_email="mohamad.nematizadehhh@gmail.com",
-    packages=["detect_dice"]
-)
+    long_description=pre_install() ,
+    requires= [] ,
+    author_email="mohammad.nematizzadeh@gmail.com",
+    packages=["detect_dice"] ,
+    long_description_content_type='text/markdown' ,
+    install_requires= install_requires ,
+    url="https://github.com/MohamadNematizadeh/detect_dice" ,
+    entry_points={"console_scripts": ["detect_dice=detect_dice.detect_dice:detect_dice"]},
+    include_package_data=True
+    )
