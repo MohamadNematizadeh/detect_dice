@@ -14,8 +14,8 @@ with open('./requirements.txt') as f:
 
 
 setup(name="detect_dice" ,
-    version="1.0.2", 
-    author="MohamadNematizadeh" , 
+    version="1.0.4", 
+    author="MohammadNematizadeh" , 
     description="This package is in the field of image processing and can perform dice detection for you",
     long_description=pre_install() ,
     requires= [] ,
