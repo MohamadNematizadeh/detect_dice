@@ -23,8 +23,5 @@ python3 detector_dice.py --input dice.jpg --output output.jpg
 
 ```python
 import detector_dice
-
-
-detector_dice = detector_dice()
-detect_dice(input "input image",output "output image")
+detect_dice.detect_dice(image_path="۳.jpg",output_path="1.jpg")
 ```
