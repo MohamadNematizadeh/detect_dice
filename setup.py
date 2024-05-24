@@ -14,6 +14,4 @@ setup(name="detect_dice" ,
     long_description_content_type="text/markdown",
     url="https://github.com/MohamadNematizadeh/detect_dice",
     requires= [] ,
-    packages=["detect_dice"],
-    )
-
+    packages=["detect_dice"])
