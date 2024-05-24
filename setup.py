@@ -23,7 +23,6 @@ setup(name="detect_dice" ,
     packages=["detect_dice"] ,
     long_description_content_type='text/markdown' ,
     install_requires= install_requires ,
-    url="https://github.com/MohamadNematizadeh/detect_dice" ,
     entry_points={"console_scripts": ["detect_dice=detect_dice.detect_dice:detect_dice"]},
     include_package_data=True
     )
