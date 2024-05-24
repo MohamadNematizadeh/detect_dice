@@ -1,4 +1,4 @@
-# detect dice
+# detect dice 🎲
 detect_dice is a simple and fast dice detection library made in Python based on cv2(opencv. This library allows you to perform dice detection operations on images for you
 
 ## Install
