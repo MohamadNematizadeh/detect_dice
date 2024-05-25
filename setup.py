@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 
 setup(name="detect_dice" ,
-    version="1.0.10", 
+    version="1.0.11", 
     author="MohammadNematizadeh" ,
     author_email="mohammad.nematizzadeh@gmail.com",
     description="This package is in the field of image processing and can perform dice detection for you",
