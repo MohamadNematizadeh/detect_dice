@@ -1,4 +1,8 @@
 # detect dice 🎲
+[![Upload Python Package](https://github.com/MohamadNematizadeh/detect_dice/actions/workflows/python-publish.yml/badge.svg)](https://github.com/MohamadNematizadeh/detect_dice/actions/workflows/python-publish.yml)
+[![Python package](https://github.com/MohamadNematizadeh/detect_dice/actions/workflows/python-package.yml/badge.svg)](https://github.com/MohamadNematizadeh/detect_dice/actions/workflows/python-package.yml)
+![Downloads](https://static.pepy.tech/badge/detect-dice)
+
 detect_dice is a simple and fast dice detection library made in Python based on cv2(opencv. This library allows you to perform dice detection operations on images for you)🎲
 
 ## Install
